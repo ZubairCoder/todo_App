@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:layout_margin="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="#EFE8E8"
+    app:cardElevation="16dp"
+    android:focusable="true">
+
+
+        <TextView
+            android:id="@+id/txtitle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="Title"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/txtdescription"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:hint="Description"
+            android:textSize="@dimen/_14sdp" />
+    <TextView
+        android:id="@+id/txtAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:hint="00:00"
+        android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/deleteUserID"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="end"
+            android:src="@drawable/delete"
+            android:contentDescription="Delete" />
+
+
+    </androidx.cardview.widget.CardView>
+
